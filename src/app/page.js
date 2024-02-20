@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Carousel from "@/Components/Carousel";
+import Carousel from "@/app/ui/Carousel";
 
 export default function Landing() {
   return (
@@ -12,13 +12,13 @@ export default function Landing() {
         <div className="flex flex-col  justify-between h-[130px] items-center w-1/2 md:w-64">
           <Link
             className=" bg-blue-700 p-3 w-full text-white rounded-md focus:outline-none focus:ring focus:border-white text-center"
-            href="./Authentication/signIn"
+            href="./authentication/signin"
           >
             Sign In
           </Link>
           <Link
             className=" bg-white  p-3 w-full rounded-md border-2 border-blue-700 focus:outline-none focus:ring focus:border-white text-center"
-            href="./Authentication/signUp"
+            href="./authentication/signup"
           >
             Sign Up
           </Link>

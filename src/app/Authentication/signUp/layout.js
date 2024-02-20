@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function LoginLayout({ children }) {
+export default function SignUpLayout({ children }) {
   return <section>{children}</section>;
 }

@@ -2,14 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
-import FormInput from "@/Components/Input";
+import FormInput from "@/app/ui/Input";
 import {
   nameValidation,
   passwordValidation,
   emailValidation,
-} from "@/Validation";
-import Button from "@/Components/Button";
-import IconBtn from "@/Components/IconBtn";
+} from "@/app/lib/Validation";
+import Button from "@/app/ui/Button";
+import IconBtn from "@/app/ui/IconBtn";
 import { MdEmail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 import { FcGoogle } from "react-icons/fc";
@@ -125,7 +125,7 @@ export default function SignUp() {
             }
           />
           <div className="flex w-full justify-center items-center">
-            <Button type="submit" string="Sign Up" />
+            <Button type="submit" string="Sign Up" link={"../../preferences"} />
           </div>
         </form>
       </div>
@@ -138,8 +138,4 @@ export default function SignUp() {
       </div>
     </main>
   );
-}
-
-function checkAllProperties(object, condition) {
-  return Object.values(object).every(condition);
 }

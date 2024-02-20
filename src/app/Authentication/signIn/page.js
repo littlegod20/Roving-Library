@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import FormInput from "@/Components/Input";
-import { emailValidation, passwordValidation } from "@/Validation";
-import Button from "@/Components/Button";
-import IconBtn from "@/Components/IconBtn";
+import FormInput from "@/app/ui/Input";
+import { emailValidation, passwordValidation } from "@/app/lib/Validation";
+import Button from "@/app/ui/Button";
+import IconBtn from "@/app/ui/IconBtn";
 import { MdEmail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 import { FcGoogle } from "react-icons/fc";
@@ -102,8 +102,8 @@ export default function SignIn() {
               )
             }
           />
-          <div className="fle w-full justify-center items-center">
-            <Button string="Sign In" />
+          <div className="flex w-full justify-center items-center">
+            <Button string="Sign In" link={"../../preferences"} />
           </div>
         </form>
       </div>
