@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { slides } from "@/app/landingSlides";
+import { slides } from "@/app/lib/landingSlides";
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
