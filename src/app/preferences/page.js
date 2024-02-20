@@ -87,7 +87,7 @@ export default function Preferences() {
       </section>
       <section className="flex gap-4 flex-wrap justify-evenly mt-5 ">
         {placeholders.map((item) => (
-          <div key={item.name}>
+          <div className="" key={item.name}>
             <GenreCard
               image={item.image}
               name={item.name}
